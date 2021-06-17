@@ -8,7 +8,7 @@ const config = {
     method: 'GET'
 }
 module.exports = {
-    getInfoRepo(){
+    getInfoRepoCommits(){
         return new Promise((resolve, reject) => {
             const response = https.request(config, (resp) => {
                 let data = '';
