@@ -14,4 +14,5 @@ RUN apk --no-cache --virtual build-dependencies add \
 
 COPY ./ ./
 RUN npm install
+RUN npm init -y
 CMD ["npm", "start"]
